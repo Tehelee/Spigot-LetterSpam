@@ -1,0 +1,17 @@
+name: LetterSpam
+main: com.tehelee.letterSpam.Main
+version: 1.10.2b
+
+permissions:
+  permissions.letterSpam.*:
+    description: Gives access to all of LetterSpam
+    default: op
+    children:
+      permissions.letterSpam.noFilter: true
+      permissions.letterSpam.moderator: true
+  permissions.letterSpam.noFilter:
+    description: Players with this permission will not have their messages filtered.
+    default: op
+  permissions.letterSpam.moderator:
+    description: Displays all warnings given to other players when they've letter spammed
+    default: op
